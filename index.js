@@ -26,7 +26,11 @@ registerBtn.onclick = function(){
         if (password.value !== ""){
             accounts[username.value] = password.value;
             loginNews.textContent = "Account Created!"
+        }else{
+            loginNews.textContent = "Blank Password"
         }
+    }else{
+            loginNews.textContent = "Username Taken"
     }
 }
     
