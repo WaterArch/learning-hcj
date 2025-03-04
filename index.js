@@ -12,7 +12,7 @@ loginBtn.onclick = function(){
     if(Object.keys(accounts).includes(username.value)){
         if(accounts[username.value] == password.value){
             loginNews.textContent = "Logined!"
-            window.location.href = "../portfolio/helpme.html"
+            window.location.href = "portfolio/helpme.html"
         }else{
             loginNews.textContent = "Invalid Password"
         }
