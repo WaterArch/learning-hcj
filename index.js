@@ -1,17 +1,13 @@
-accounts = {
-    
-};
-
 loginBtn = document.getElementById("loginBtn");
 username = document.getElementById("username");
 password = document.getElementById("password");
 loginNews = document.getElementById("clickTest");
 
 loginBtn.onclick = function(){
-    if(Object.keys(accounts).includes(username.value)){
-        if(accounts[username.value] == password.value){
+    if(Object.keys(localStorage).includes(username.value)){
+        if(localStorage[username.value] == password.value){
             loginNews.textContent = "Logined!"
-            window.location.href = "learning-hcj/portfolio/helpme.html"
+            window.location.href = "portfolio/helpme.html"
         }else{
             loginNews.textContent = "Invalid Password"
         }
@@ -21,9 +17,9 @@ loginBtn.onclick = function(){
 }
 
 registerBtn.onclick = function(){
-    if(!Object.keys(accounts).includes(username.value)){
-        if (password.value !== ""){
-            accounts[username.value] = password.value;
+    if(!Object.keys(localStorage).includes(username.value)){
+        if (localStorage.value !== ""){
+            localStorage[username.value] = password.value;
             loginNews.textContent = "Account Created!"
         }else{
             loginNews.textContent = "Blank Password"
