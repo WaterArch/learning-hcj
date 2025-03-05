@@ -1,6 +1,5 @@
-accounts = {"Water": "water",
-            "Static": "re:static",
-            "Supercuties7": "supercuties7"
+accounts = {
+    
 };
 
 loginBtn = document.getElementById("loginBtn");
