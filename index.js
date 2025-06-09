@@ -9,10 +9,10 @@ loginBtn.onclick = function(){
             loginNews.textContent = "Logined!"
             window.location.href = "portfolio/helpme.html"
         }else{
-            loginNews.textContent = "Invalid Password"
+            loginNews.textContent = "Invalid Password..."
         }
     }else{
-        loginNews.textContent = "Invalid Username."
+        loginNews.textContent = "Invalid Username"
     }
 }
 
