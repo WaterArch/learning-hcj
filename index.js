@@ -12,7 +12,7 @@ loginBtn.onclick = function(){
             loginNews.textContent = "Invalid Password"
         }
     }else{
-        loginNews.textContent = "Invalid Username!!"
+        loginNews.textContent = "Invalid Username."
     }
 }
 
